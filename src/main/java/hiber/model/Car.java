@@ -9,15 +9,14 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column
+    @Column(name = "model")
     private String model;
 
-    @Column
+    @Column(name = "series")
     private int series;
 
 
-//    @OneToOne(mappedBy = "car")
-    @OneToOne(optional = false, mappedBy = "car")
+    @OneToOne(mappedBy = "car")
     private User user;
 
     public Car() {

@@ -56,4 +56,9 @@ public class AppConfig {
         transactionManager.setSessionFactory(getSessionFactory().getObject());
         return transactionManager;
     }
+
+    @Bean
+    public Car getCar(){
+        return new Car();
+    }
 }
