@@ -57,8 +57,4 @@ public class AppConfig {
         return transactionManager;
     }
 
-    @Bean
-    public Car getCar(){
-        return new Car();
-    }
 }
